@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.alfresco.maven</groupId>
         <artifactId>alfresco-sdk-parent</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
     </parent>
 
     <pluginRepositories>
@@ -39,6 +39,21 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+    
+    <repository>
+      <id>alfresco</id>
+      <url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>alfresco-snapshots</id>
+      <url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>daily</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
     <modules>
         <module>repo-login-switcher</module>
         <module>share-login-switcher</module>

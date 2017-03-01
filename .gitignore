@@ -1,0 +1,16 @@
+.project
+.settings
+.classpath
+target
+alf_data_dev
+repo/.xml/
+*~
+/reset.sh
+repo/src/test/resources/test-offsprings/*
+*.swp
+# Ignoring backup files that mergetool meld creates
+*.LOCAL.*
+*.BASE.*
+*.BACKUP.*
+*.REMOTE.*
+*.orig
